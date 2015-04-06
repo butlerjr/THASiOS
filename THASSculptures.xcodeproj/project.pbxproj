@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		280842231AD2F4F900720017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280842221AD2F4F900720017 /* AppDelegate.swift */; };
+		280842251AD2F4F900720017 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280842241AD2F4F900720017 /* MasterViewController.swift */; };
+		280842271AD2F4F900720017 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280842261AD2F4F900720017 /* DetailViewController.swift */; };
+		2808422A1AD2F4F900720017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280842281AD2F4F900720017 /* Main.storyboard */; };
+		2808422C1AD2F4F900720017 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2808422B1AD2F4F900720017 /* Images.xcassets */; };
+		2808422F1AD2F4F900720017 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2808422D1AD2F4F900720017 /* LaunchScreen.xib */; };
+		2808423B1AD2F4F900720017 /* THASSculpturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2808423A1AD2F4F900720017 /* THASSculpturesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		280842351AD2F4F900720017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 280842151AD2F4F900720017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2808421C1AD2F4F900720017;
+			remoteInfo = THASSculptures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2808421D1AD2F4F900720017 /* THASSculptures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THASSculptures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		280842211AD2F4F900720017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280842221AD2F4F900720017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		280842241AD2F4F900720017 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		280842261AD2F4F900720017 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		280842291AD2F4F900720017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2808422B1AD2F4F900720017 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2808422E1AD2F4F900720017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		280842341AD2F4F900720017 /* THASSculpturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THASSculpturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		280842391AD2F4F900720017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2808423A1AD2F4F900720017 /* THASSculpturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THASSculpturesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2808421A1AD2F4F900720017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280842311AD2F4F900720017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		280842141AD2F4F900720017 = {
+			isa = PBXGroup;
+			children = (
+				2808421F1AD2F4F900720017 /* THASSculptures */,
+				280842371AD2F4F900720017 /* THASSculpturesTests */,
+				2808421E1AD2F4F900720017 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2808421E1AD2F4F900720017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2808421D1AD2F4F900720017 /* THASSculptures.app */,
+				280842341AD2F4F900720017 /* THASSculpturesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2808421F1AD2F4F900720017 /* THASSculptures */ = {
+			isa = PBXGroup;
+			children = (
+				280842221AD2F4F900720017 /* AppDelegate.swift */,
+				280842241AD2F4F900720017 /* MasterViewController.swift */,
+				280842261AD2F4F900720017 /* DetailViewController.swift */,
+				280842281AD2F4F900720017 /* Main.storyboard */,
+				2808422B1AD2F4F900720017 /* Images.xcassets */,
+				2808422D1AD2F4F900720017 /* LaunchScreen.xib */,
+				280842201AD2F4F900720017 /* Supporting Files */,
+			);
+			path = THASSculptures;
+			sourceTree = "<group>";
+		};
+		280842201AD2F4F900720017 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280842211AD2F4F900720017 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280842371AD2F4F900720017 /* THASSculpturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2808423A1AD2F4F900720017 /* THASSculpturesTests.swift */,
+				280842381AD2F4F900720017 /* Supporting Files */,
+			);
+			path = THASSculpturesTests;
+			sourceTree = "<group>";
+		};
+		280842381AD2F4F900720017 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280842391AD2F4F900720017 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2808421C1AD2F4F900720017 /* THASSculptures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2808423E1AD2F4F900720017 /* Build configuration list for PBXNativeTarget "THASSculptures" */;
+			buildPhases = (
+				280842191AD2F4F900720017 /* Sources */,
+				2808421A1AD2F4F900720017 /* Frameworks */,
+				2808421B1AD2F4F900720017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THASSculptures;
+			productName = THASSculptures;
+			productReference = 2808421D1AD2F4F900720017 /* THASSculptures.app */;
+			productType = "com.apple.product-type.application";
+		};
+		280842331AD2F4F900720017 /* THASSculpturesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280842411AD2F4F900720017 /* Build configuration list for PBXNativeTarget "THASSculpturesTests" */;
+			buildPhases = (
+				280842301AD2F4F900720017 /* Sources */,
+				280842311AD2F4F900720017 /* Frameworks */,
+				280842321AD2F4F900720017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				280842361AD2F4F900720017 /* PBXTargetDependency */,
+			);
+			name = THASSculpturesTests;
+			productName = THASSculpturesTests;
+			productReference = 280842341AD2F4F900720017 /* THASSculpturesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		280842151AD2F4F900720017 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = THAS;
+				TargetAttributes = {
+					2808421C1AD2F4F900720017 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					280842331AD2F4F900720017 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2808421C1AD2F4F900720017;
+					};
+				};
+			};
+			buildConfigurationList = 280842181AD2F4F900720017 /* Build configuration list for PBXProject "THASSculptures" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 280842141AD2F4F900720017;
+			productRefGroup = 2808421E1AD2F4F900720017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2808421C1AD2F4F900720017 /* THASSculptures */,
+				280842331AD2F4F900720017 /* THASSculpturesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2808421B1AD2F4F900720017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2808422A1AD2F4F900720017 /* Main.storyboard in Resources */,
+				2808422F1AD2F4F900720017 /* LaunchScreen.xib in Resources */,
+				2808422C1AD2F4F900720017 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280842321AD2F4F900720017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		280842191AD2F4F900720017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280842271AD2F4F900720017 /* DetailViewController.swift in Sources */,
+				280842251AD2F4F900720017 /* MasterViewController.swift in Sources */,
+				280842231AD2F4F900720017 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280842301AD2F4F900720017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2808423B1AD2F4F900720017 /* THASSculpturesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		280842361AD2F4F900720017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2808421C1AD2F4F900720017 /* THASSculptures */;
+			targetProxy = 280842351AD2F4F900720017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		280842281AD2F4F900720017 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280842291AD2F4F900720017 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2808422D1AD2F4F900720017 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2808422E1AD2F4F900720017 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2808423C1AD2F4F900720017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2808423D1AD2F4F900720017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2808423F1AD2F4F900720017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = THASSculptures/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		280842401AD2F4F900720017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = THASSculptures/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		280842421AD2F4F900720017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = THASSculpturesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THASSculptures.app/THASSculptures";
+			};
+			name = Debug;
+		};
+		280842431AD2F4F900720017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = THASSculpturesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THASSculptures.app/THASSculptures";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		280842181AD2F4F900720017 /* Build configuration list for PBXProject "THASSculptures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2808423C1AD2F4F900720017 /* Debug */,
+				2808423D1AD2F4F900720017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2808423E1AD2F4F900720017 /* Build configuration list for PBXNativeTarget "THASSculptures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2808423F1AD2F4F900720017 /* Debug */,
+				280842401AD2F4F900720017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		280842411AD2F4F900720017 /* Build configuration list for PBXNativeTarget "THASSculpturesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280842421AD2F4F900720017 /* Debug */,
+				280842431AD2F4F900720017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 280842151AD2F4F900720017 /* Project object */;
+}
