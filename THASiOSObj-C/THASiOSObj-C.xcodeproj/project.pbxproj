@@ -15,6 +15,8 @@
 		280842961AD310EE00720017 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280842951AD310EE00720017 /* Images.xcassets */; };
 		280842991AD310EE00720017 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280842971AD310EE00720017 /* LaunchScreen.xib */; };
 		280842A51AD310EE00720017 /* THASiOSObj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280842A41AD310EE00720017 /* THASiOSObj_CTests.m */; };
+		280842B21AD316A500720017 /* SculptureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 280842B11AD316A500720017 /* SculptureData.m */; };
+		280842B51AD3181100720017 /* SculptureDataDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 280842B41AD3181100720017 /* SculptureDataDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		2808429E1AD310EE00720017 /* THASiOSObj-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "THASiOSObj-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		280842A31AD310EE00720017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		280842A41AD310EE00720017 /* THASiOSObj_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THASiOSObj_CTests.m; sourceTree = "<group>"; };
+		280842B01AD316A500720017 /* SculptureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SculptureData.h; sourceTree = "<group>"; };
+		280842B11AD316A500720017 /* SculptureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SculptureData.m; sourceTree = "<group>"; };
+		280842B31AD3181100720017 /* SculptureDataDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SculptureDataDoc.h; sourceTree = "<group>"; };
+		280842B41AD3181100720017 /* SculptureDataDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SculptureDataDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +90,8 @@
 		280842841AD310EE00720017 /* THASiOSObj-C */ = {
 			isa = PBXGroup;
 			children = (
-				280842891AD310EE00720017 /* AppDelegate.h */,
-				2808428A1AD310EE00720017 /* AppDelegate.m */,
-				2808428C1AD310EE00720017 /* MasterViewController.h */,
-				2808428D1AD310EE00720017 /* MasterViewController.m */,
-				2808428F1AD310EE00720017 /* DetailViewController.h */,
-				280842901AD310EE00720017 /* DetailViewController.m */,
-				280842921AD310EE00720017 /* Main.storyboard */,
+				280842AF1AD3137D00720017 /* Model */,
+				280842AE1AD3133600720017 /* GUI */,
 				280842951AD310EE00720017 /* Images.xcassets */,
 				280842971AD310EE00720017 /* LaunchScreen.xib */,
 				280842851AD310EE00720017 /* Supporting Files */,
@@ -122,6 +123,31 @@
 				280842A31AD310EE00720017 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280842AE1AD3133600720017 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				280842891AD310EE00720017 /* AppDelegate.h */,
+				2808428A1AD310EE00720017 /* AppDelegate.m */,
+				2808428C1AD310EE00720017 /* MasterViewController.h */,
+				2808428D1AD310EE00720017 /* MasterViewController.m */,
+				2808428F1AD310EE00720017 /* DetailViewController.h */,
+				280842901AD310EE00720017 /* DetailViewController.m */,
+				280842921AD310EE00720017 /* Main.storyboard */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		280842AF1AD3137D00720017 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				280842B01AD316A500720017 /* SculptureData.h */,
+				280842B11AD316A500720017 /* SculptureData.m */,
+				280842B31AD3181100720017 /* SculptureDataDoc.h */,
+				280842B41AD3181100720017 /* SculptureDataDoc.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +252,8 @@
 			files = (
 				2808428B1AD310EE00720017 /* AppDelegate.m in Sources */,
 				2808428E1AD310EE00720017 /* MasterViewController.m in Sources */,
+				280842B51AD3181100720017 /* SculptureDataDoc.m in Sources */,
+				280842B21AD316A500720017 /* SculptureData.m in Sources */,
 				280842881AD310EE00720017 /* main.m in Sources */,
 				280842911AD310EE00720017 /* DetailViewController.m in Sources */,
 			);
