@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6D1F4B2-CE91-40F1-AF94-4EC95BD9F874</string>
+	<key>IDESourceControlProjectName</key>
+	<string>THASiOSObj-C</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4FD0CD32CD3A94A16BAF3B66B0FB3A47CEF420C9</key>
+		<string>https://github.com/butlerjr/THASiOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>THASiOSObj-C/THASiOSObj-C.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4FD0CD32CD3A94A16BAF3B66B0FB3A47CEF420C9</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/butlerjr/THASiOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4FD0CD32CD3A94A16BAF3B66B0FB3A47CEF420C9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4FD0CD32CD3A94A16BAF3B66B0FB3A47CEF420C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>THASiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
