@@ -8,6 +8,8 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "SculptureDataDoc.h"
+#import "SculptureData.h"
 
 @interface MasterViewController ()
 
@@ -15,6 +17,7 @@
 @end
 
 @implementation MasterViewController
+@synthesize sculptures = _sculptures;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -32,6 +35,7 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.title = @"Sculptures";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,14 +72,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return _sculptures.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    SculptureDataDoc *sculpture = [self.sculptures objectAtIndex:indexPath.row];
+    cell.textLabel.text = sculpture.data.title;
+    cell.imageView.image = sculpture.thumbImage;
     return cell;
 }
 

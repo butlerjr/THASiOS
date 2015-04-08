@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "MasterViewController.h"
+#import "SculptureDataDoc.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -17,9 +19,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    SculptureDataDoc *flame = [[SculptureDataDoc alloc] initWithTitle:@"Flame of the Millenium" rating: 1 thumbImage:[UIImage imageNamed: @"flameofthemillenium.jpg"] fullImage: [UIImage imageNamed:@"flameofthemillenium.jpg"]];
+    SculptureDataDoc *tree = [[SculptureDataDoc alloc] initWithTitle:@"Tree" rating: 2 thumbImage:[UIImage imageNamed: @"tree.jpg"] fullImage: [UIImage imageNamed:@"tree.jpg"]];
+    
+    NSMutableArray *sculptures = [NSMutableArray arrayWithObjects:flame, tree, nil];
+
     // Override point for customization after application launch.
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+    UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
+    MasterViewController *masterController = [masterNavigationController.viewControllers objectAtIndex:0];
+    masterController.sculptures = sculptures;
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
     return YES;

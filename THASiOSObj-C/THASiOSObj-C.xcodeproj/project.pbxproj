@@ -17,6 +17,8 @@
 		280842A51AD310EE00720017 /* THASiOSObj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280842A41AD310EE00720017 /* THASiOSObj_CTests.m */; };
 		280842B21AD316A500720017 /* SculptureData.m in Sources */ = {isa = PBXBuildFile; fileRef = 280842B11AD316A500720017 /* SculptureData.m */; };
 		280842B51AD3181100720017 /* SculptureDataDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 280842B41AD3181100720017 /* SculptureDataDoc.m */; };
+		28DC32EA1AD5890000B9FAE4 /* flameofthemillenium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28DC32E91AD5890000B9FAE4 /* flameofthemillenium.jpg */; };
+		28DC32EC1AD5BCC600B9FAE4 /* tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28DC32EB1AD5BCC600B9FAE4 /* tree.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		280842B11AD316A500720017 /* SculptureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SculptureData.m; sourceTree = "<group>"; };
 		280842B31AD3181100720017 /* SculptureDataDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SculptureDataDoc.h; sourceTree = "<group>"; };
 		280842B41AD3181100720017 /* SculptureDataDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SculptureDataDoc.m; sourceTree = "<group>"; };
+		28DC32E91AD5890000B9FAE4 /* flameofthemillenium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flameofthemillenium.jpg; sourceTree = "<group>"; };
+		28DC32EB1AD5BCC600B9FAE4 /* tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tree.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +94,11 @@
 		280842841AD310EE00720017 /* THASiOSObj-C */ = {
 			isa = PBXGroup;
 			children = (
+				28DC32EB1AD5BCC600B9FAE4 /* tree.jpg */,
 				280842AF1AD3137D00720017 /* Model */,
 				280842AE1AD3133600720017 /* GUI */,
 				280842951AD310EE00720017 /* Images.xcassets */,
+				28DC32E91AD5890000B9FAE4 /* flameofthemillenium.jpg */,
 				280842971AD310EE00720017 /* LaunchScreen.xib */,
 				280842851AD310EE00720017 /* Supporting Files */,
 			);
@@ -231,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				280842941AD310EE00720017 /* Main.storyboard in Resources */,
+				28DC32EC1AD5BCC600B9FAE4 /* tree.jpg in Resources */,
+				28DC32EA1AD5890000B9FAE4 /* flameofthemillenium.jpg in Resources */,
 				280842991AD310EE00720017 /* LaunchScreen.xib in Resources */,
 				280842961AD310EE00720017 /* Images.xcassets in Resources */,
 			);
@@ -448,6 +456,7 @@
 				280842AA1AD310EE00720017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		280842AB1AD310EE00720017 /* Build configuration list for PBXNativeTarget "THASiOSObj-CTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +465,7 @@
 				280842AD1AD310EE00720017 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
