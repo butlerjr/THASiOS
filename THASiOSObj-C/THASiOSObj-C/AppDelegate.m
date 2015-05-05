@@ -30,6 +30,7 @@
     UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
     MasterViewController *masterController = [masterNavigationController.viewControllers objectAtIndex:0];
     masterController.sculptures = sculptures;
+    masterController.sculptures = sculptures;
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
     return YES;

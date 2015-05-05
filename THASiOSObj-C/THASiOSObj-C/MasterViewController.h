@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTLSculptures.h"
 
 @class DetailViewController;
 

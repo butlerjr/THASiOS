@@ -10,10 +10,10 @@
 #import "DetailViewController.h"
 #import "SculptureDataDoc.h"
 #import "SculptureData.h"
+#define STRIP_GTM_FETCH_LOGGING 1
 
 @interface MasterViewController ()
 
-@property NSMutableArray *objects;
 @end
 
 @implementation MasterViewController
@@ -29,11 +29,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    static GTLServiceSculptures *service = nil;
+    if (!service) {
+        service = [[GTLServiceSculptures alloc] init];
+        service.retryEnabled = YES;
+    }
+    
+    GTLQuerySculptures *query = [GTLQuerySculptures queryForSculptureList];
+    [service executeQuery:query completionHandler:^(GTLServiceTicket *ticket, GTLSculpturesSculptureCollection *object, NSError *error) {
+        NSArray *items = [object items];
+        //Do something here
+    }];
+    
+    if (self.sculptures == nil) {
+        self.sculptures = [[NSMutableArray alloc] init];
+    }
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+//    self.objects = [NSMutableArray new];
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     self.title = @"Sculptures";
 }
@@ -43,23 +57,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
+        SculptureDataDoc *object = self.sculptures[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
+        [controller setDetailItem : object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -90,7 +95,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
+        [self.sculptures removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

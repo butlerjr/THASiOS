@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SculptureDataDoc.h"
+
 
 @class SculptureDataDoc;
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) SculptureDataDoc* detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (strong) SculptureDataDoc *sculpture;
 
