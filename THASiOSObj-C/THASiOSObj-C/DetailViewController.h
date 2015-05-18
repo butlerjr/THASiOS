@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "SculptureDataDoc.h"
+#import "GTLSculptures.h"
 
 
 @class SculptureDataDoc;
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) SculptureDataDoc* detailItem;
+@property (strong, nonatomic) GTLSculpturesSculpture* detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-@property (strong) SculptureDataDoc *sculpture;
+@property (strong) GTLSculpturesSculpture *sculpture;
 
 @end
 

@@ -29,24 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    static GTLServiceSculptures *service = nil;
-    if (!service) {
-        service = [[GTLServiceSculptures alloc] init];
-        service.retryEnabled = YES;
-    }
-    
-    GTLQuerySculptures *query = [GTLQuerySculptures queryForSculptureList];
-    [service executeQuery:query completionHandler:^(GTLServiceTicket *ticket, GTLSculpturesSculptureCollection *object, NSError *error) {
-        NSArray *items = [object items];
-        //Do something here
-    }];
+
     
     if (self.sculptures == nil) {
         self.sculptures = [[NSMutableArray alloc] init];
     }
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-//    self.objects = [NSMutableArray new];
 
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     self.title = @"Sculptures";
@@ -62,7 +51,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        SculptureDataDoc *object = self.sculptures[indexPath.row];
+        GTLSculpturesSculpture *object = self.sculptures[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         [controller setDetailItem : object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -82,9 +71,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    SculptureDataDoc *sculpture = [self.sculptures objectAtIndex:indexPath.row];
-    cell.textLabel.text = sculpture.data.title;
-    cell.imageView.image = sculpture.thumbImage;
+    GTLSculpturesSculpture *sculpture = [self.sculptures objectAtIndex:indexPath.row];
+    cell.textLabel.text = [sculpture JSONValueForKey: @"title"];
+    NSString *image_url = [sculpture JSONValueForKey: @"image"];
+    NSURL *url = [NSURL URLWithString:image_url];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [UIImage imageWithData:data];
+    cell.imageView.image = image;
     return cell;
 }
 

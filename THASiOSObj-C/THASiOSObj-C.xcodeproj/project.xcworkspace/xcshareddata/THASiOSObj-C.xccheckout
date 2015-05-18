@@ -22,11 +22,11 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>052f66bb-8366-e9ed-b056-95094e25c79e++505</key>
-		<string>../../../THASiOSObj-C/google-api-objectivec-client-read-only/</string>
+		<string>../../../THASiOSObj-C/google-api-objectivec-client-read-only</string>
 		<key>4FD0CD32CD3A94A16BAF3B66B0FB3A47CEF420C9</key>
 		<string>../../..</string>
 		<key>b3aa69f0-f65c-a609-0a27-78855af037c1++2896</key>
-		<string>../../../THASiOSObj-C/google-api-objectivec-client-read-only/Source/HTTPFetcher/</string>
+		<string>../../../THASiOSObj-C/google-api-objectivec-client-read-only/Source/HTTPFetcher</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>

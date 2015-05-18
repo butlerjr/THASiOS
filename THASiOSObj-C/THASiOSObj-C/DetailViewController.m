@@ -17,7 +17,7 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(SculptureDataDoc*)newDetailItem {
+- (void)setDetailItem:(GTLSculpturesSculpture*)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
             
@@ -29,7 +29,11 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        UIImage *img = self.detailItem.fullImage;
+        NSString *image_url = [self.detailItem JSONValueForKey: @"image"];
+        NSURL *url = [NSURL URLWithString:image_url];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *image = [UIImage imageWithData:data];
+        UIImage *img = image;
         self.imageBox.image = img;
     }
 }
