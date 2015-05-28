@@ -11,6 +11,9 @@
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageBox;
 
+@property (weak, nonatomic) IBOutlet UILabel *detailDescription;
+@property (weak, nonatomic) IBOutlet UILabel *artistName;
+
 @end
 
 @implementation DetailViewController
@@ -35,6 +38,11 @@
         UIImage *image = [UIImage imageWithData:data];
         UIImage *img = image;
         self.imageBox.image = img;
+        NSString *title = [self.detailItem JSONValueForKey: @"title"];
+        self.detailDescription.text = title;
+        NSString *artist = [self.detailItem JSONValueForKey: @"artist"];
+        self.artistName.text = artist;
+        
     }
 }
 

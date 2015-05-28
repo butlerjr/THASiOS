@@ -16,7 +16,6 @@
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) GTLSculpturesSculpture* detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (strong) GTLSculpturesSculpture *sculpture;
 
 @end
